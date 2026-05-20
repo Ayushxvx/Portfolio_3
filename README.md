@@ -1,73 +1,71 @@
-# React + TypeScript + Vite
+🌐 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal portfolio website built to showcase my skills, certifications, projects, and professional journey. The portfolio also includes a fully functional Contact Me section for easy communication and networking.
 
-Currently, two official plugins are available:
+The website is designed with smooth animations, reusable components, and clean navigation to provide an engaging user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🚀 Features
+👨‍💻 About Me section
+🛠️ Skills showcase
+📜 Certifications display
+📈 Professional journey & timeline
+💼 Featured projects section
+✨ Smooth scroll animations using AOS
+🧭 Seamless navigation with React Router DOM
+📱 Fully responsive design
+📬 Contact Me form/section
+⚡ Fast and optimized performance
+🛠️ Tech Stack
+React
+TypeScript
+Vite
+React Router DOM
+React Vertical Timeline Component
+AOS (Animate On Scroll)
+CSS / Tailwind / SCSS (update based on what you used)
+📦 Libraries & Components Used
+React Router DOM
 
-## React Compiler
+Used for smooth client-side routing and navigation between different sections/pages.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React Vertical Timeline Component
 
-## Expanding the ESLint configuration
+Implemented to visually represent my learning journey, achievements, and experience timeline.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+AOS (Animate On Scroll)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Used to add elegant scroll-based animations and improve user interaction.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+📂 Sections Included
+Home
+About
+Skills
+Projects
+Certificates
+Journey Timeline
+Contact
+⚙️ Installation & Setup
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Clone the repository and install dependencies:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+git clone <your-repository-link>
+cd <project-folder>
+npm install
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Start the development server:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+npm run dev
+
+Build for production:
+
+npm run build
+📸 Portfolio Highlights
+Clean and modern UI
+Component-based architecture
+Reusable React components
+Interactive animations
+Mobile-friendly layout
+Easy scalability and maintenance
+📬 Contact
+
+Feel free to connect with me for collaborations, opportunities, or discussions.
