@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState, type FormEvent } from "react"
 import emailjs from "@emailjs/browser";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AOS from "aos";
  
 export default function Contact(){
@@ -49,6 +51,16 @@ export default function Contact(){
         <div id="contact" className="bg-transparent backdrop-blur-lg border-2 border-solid border-gray-800 p-2 m-2 rounded-lg sm:w-8/12 md:w-6/12 mx-auto">
         <h1 className="text-cyan-700 font-serif text-2xl text-center p-2 m-2 underline underline-offset-6">
         Contact
+
+        <div className="p-2 m-2 flex justify-evenly items-center">
+        <a target="_blank" href="https://www.github.com/ayushxvx" className="hover:opacity-80 transition-all transition-ease transition-500">
+            <GitHubIcon />
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/ayush-verma-a31050293" className="hover:opacity-80 transition-all transition-ease transition-500">
+            <LinkedInIcon />
+        </a>
+        </div>
+
         </h1>
         <form ref={form} onSubmit={sendMail} className="p-2 m-2 border-2 border-solid border-gray-500 rounded-lg" >
 
